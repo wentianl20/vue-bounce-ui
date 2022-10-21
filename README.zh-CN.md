@@ -22,7 +22,7 @@ npm i vue-bounce-ui
 import { createApp } from 'vue'
 import App from './App.vue'
 import SliderContainer from 'vue-bounce-ui'
-import 'vue-bounce-ui/lib/vue-bounce-ui.css''
+import 'vue-bounce-ui/lib/vue-bounce-ui.css'
 
 const app = createApp();
 
