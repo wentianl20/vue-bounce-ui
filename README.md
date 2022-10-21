@@ -1,24 +1,45 @@
-# vue-bounce-ui
+# vue-bounce-ui  
+### [中文说明](https://github.com/youzan/vant/blob/main/README.zh-CN.md)
 
-## Project setup
-```
-npm install
-```
+---
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+#### Lightweight Mobile bounce UI Components built on Vue3.0
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Install
 
-### Lints and fixes files
+---
+
+#### Using `npm` to install:
+
 ```
-npm run lint
+npm i vue-bounce-ui
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Quickstart
+
+---
+
+```
+import { createApp } from 'vue'
+import App from './App.vue'
+import { SliderContainer } from 'vue-bounce-ui'
+
+const app = createApp();
+
+// Register the component
+app.use(SliderContainer);
+```
+
+### Browser Support
+
+---
+
+#### same as Vue 3 support list
+
+### License
+
+---
+
+### [MIT](https://en.wikipedia.org/wiki/MIT_License)
+
+
