@@ -19,6 +19,7 @@ npm i vue-bounce-ui
 
 ---
 
+main.js
 ```
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -30,6 +31,38 @@ const app = createApp();
 // Register the component
 app.use(SliderContainer);
 ```
+
+App.vue
+```
+  <slider-container
+      :call-back="
+            () => {
+              sliderCallBack()
+            }
+          "
+      more-content="slide to chech more"
+      :slide-distance="60"
+      class="slide-container"
+  >
+    <template #default>
+        // something here
+    </template>
+  </slider-container>
+```
+
+
+### Properties
+
+---
+#### slide-distance
+The maximum sliding distance, beyond which the callBack function will be triggered
+#### more-content
+prompt
+
+
+#### call-back
+Callback function, which will be triggered when the maximum sliding distance is exceeded
+
 
 ### Browser Support
 

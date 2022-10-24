@@ -7,6 +7,8 @@
               sliderCallBack()
             }
           "
+      more-content="继续滑动"
+      :slide-distance="60"
       class="slide-container"
   >
     <template #default>

@@ -18,6 +18,7 @@ npm i vue-bounce-ui
 
 ---
 
+main.js
 ```
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -29,6 +30,38 @@ const app = createApp();
 // 注册组件
 app.use(SliderContainer);
 ```
+
+App.vue
+```
+  <slider-container
+      :call-back="
+            () => {
+              sliderCallBack()
+            }
+          "
+      more-content="右滑查看更多"
+      :slide-distance="60"
+      class="slide-container"
+  >
+    <template #default>
+        // something here
+    </template>
+  </slider-container>
+```
+
+### 属性说明
+
+---
+#### slide-distance
+滑动的最大距离，超过这个距离会触发callBack 回调函数
+
+
+#### more-content
+文案提示
+
+
+#### call-back
+回调函数，当超过最大滑动距离后会触发
 
 ### 浏览器支持
 
