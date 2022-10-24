@@ -1,7 +1,7 @@
 import { ref, computed, onBeforeUnmount, onMounted } from 'vue'
 import { getDeviceType } from '@/utils/tools'
 
-export default function useSlider({ callBack = () => {} }) {
+export default function useSlider(callBack = () => {} , slideDistance) {
     let touchStartX = null
 
     let callBackFlag = false
@@ -81,7 +81,7 @@ export default function useSlider({ callBack = () => {} }) {
             if (distance > blank.offsetWidth) {
                 blank.style.width = distance + 'px'
 
-                const maxDistance = 80
+                const maxDistance = slideDistance
                 const distanceABS = Math.abs(distance)
                 if (!callBackFlag && distanceABS > maxDistance) {
                     callBack()
