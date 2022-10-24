@@ -1,6 +1,6 @@
 {
   "name": "vue-bounce-ui",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "private": false,
   "main": "lib/vue-bounce-ui.umd.min.js",
   "repository": {
