@@ -4,6 +4,7 @@
 ---
 
 #### Lightweight Mobile bounce UI Components built on Vue3.0
+![avatar](https://raw.githubusercontent.com/wiki/wentianl20/vue-bounce-ui/slide-checkmore.gif)
 
 ## Install
 
