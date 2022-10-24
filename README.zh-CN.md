@@ -3,6 +3,7 @@
 ---
 
 #### 基于Vue3.0的轻量、可靠的移动端弹簧橡皮筋效果，兼容微信内置浏览器
+![avatar](https://raw.githubusercontent.com/wiki/wentianl20/vue-bounce-ui/slide-checkmore.gif)
 
 ## 安装
 
